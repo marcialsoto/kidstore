@@ -1,5 +1,5 @@
 <?php
-/** 
+/**
  * Configuración básica de WordPress.
  *
  * Este archivo contiene las siguientes configuraciones: ajustes de MySQL, prefijo de tablas,
@@ -16,13 +16,13 @@
 
 // ** Ajustes de MySQL. Solicita estos datos a tu proveedor de alojamiento web. ** //
 /** El nombre de tu base de datos de WordPress */
-define('DB_NAME', 'nombredetubasededatos');
+define('DB_NAME', 'dbKidStore');
 
 /** Tu nombre de usuario de MySQL */
-define('DB_USER', 'nombredeusuario');
+define('DB_USER', 'root');
 
 /** Tu contraseña de MySQL */
-define('DB_PASSWORD', 'contraseña');
+define('DB_PASSWORD', 'mysql');
 
 /** Host de MySQL (es muy probable que no necesites cambiarlo) */
 define('DB_HOST', 'localhost');
@@ -59,7 +59,7 @@ define('NONCE_SALT', 'pon aquí tu frase aleatoria'); // Cambia esto por tu fras
  * Cambia el prefijo si deseas instalar multiples blogs en una sola base de datos.
  * Emplea solo números, letras y guión bajo.
  */
-$table_prefix  = 'wp_';
+$table_prefix  = 'ks_';
 
 
 /**
@@ -69,7 +69,7 @@ $table_prefix  = 'wp_';
  * Se recomienda encarecidamente a los desarrolladores de temas y plugins que usen WP_DEBUG
  * en sus entornos de desarrollo.
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /* ¡Eso es todo, deja de editar! Feliz blogging */
 
@@ -79,4 +79,3 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
-
