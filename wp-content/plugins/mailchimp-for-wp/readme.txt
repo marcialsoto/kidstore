@@ -3,8 +3,8 @@ Contributors: DvanKooten
 Donate link: https://mc4wp.com/
 Tags: mailchimp,newsletter,optin,mailinglist,sign-up form,subscribe,form,shortcode,widget,checkbox,comment,buddypress,multisite,bbpress,woocommerce,easy digital downloads,contact form,contact form 7,events manager,comment form,registration form,captcha
 Requires at least: 3.6
-Tested up to: 4.0
-Stable tag: 2.1.5
+Tested up to: 4.0.1
+Stable tag: 2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,6 +29,7 @@ Add sign-up checkboxes to *any* form on your website. The plugin offers built-in
 - Simple. All you need is your MailChimp API key.
 - Customizable. Have the form fields generated for you or use your own customized HTML.
 - Beautiful. Choose one of the default form themes or use your own styles.
+- Integrates with Contact Form 7, WooCommerce checkout and other popular form plugins.
 - Developer friendly.
 
 [Installation](https://wordpress.org/plugins/mailchimp-for-wp/installation/) | [Frequently Asked Questions](https://wordpress.org/plugins/mailchimp-for-wp/faq/) | [Screenshots](https://wordpress.org/plugins/mailchimp-for-wp/screenshots/)
@@ -40,10 +41,9 @@ Add sign-up checkboxes to *any* form on your website. The plugin offers built-in
 > Easy CSS Styles Builder & Custom Color Themes.<br />
 > AJAX Forms. Forms do not require a page reload.<br />
 > Log & Statistics. Useful insights.<br />
-> WooCommerce and Easy Digital Downloads checkout integration.<br />
 > Priority Support<br />
 >
-> [More information](https://mc4wp.com/features/#utm_source=wp-plugin-repo&utm_medium=link&utm_campaign=after-features-link) | [Demo](https://mc4wp.com/demo/#utm_source=wp-plugin-repo&utm_medium=link&utm_campaign=after-features-link)
+> [Upgrade to MailChimp for WordPress Pro](https://mc4wp.com/features/#utm_source=wp-plugin-repo&utm_medium=link&utm_campaign=after-features-link)
 
 **Translations**
 
@@ -57,9 +57,10 @@ Want to [translate the plugin into your own language](https://www.transifex.com/
 **More information**
 
 - [MailChimp for WordPress Pro](https://mc4wp.com/), containing [additional features](https://mc4wp.com/features/#utm_source=wp-plugin-repo&utm_medium=link&utm_campaign=more-info-link).
+- [Translate the MailChimp for WordPress plugin into your language](https://www.transifex.com/projects/p/mailchimp-for-wordpress/)
+- Developers; follow or contribute to the [MailChimp for WP plugin on GitHub](https://github.com/dannyvankooten/mailchimp-for-wordpress)
 - Other [WordPress plugins](https://dannyvankooten.com/wordpress-plugins/#utm_source=wp-plugin-repo&utm_medium=link&utm_campaign=more-info-link) by [Danny van Kooten](http://dannyvankooten.com#utm_source=wp-plugin-repo&utm_medium=link&utm_campaign=more-info-link)
 - [@DannyvanKooten](https://twitter.com/dannyvankooten) on Twitter
-- Developers; follow or contribute to the [MailChimp for WP plugin on GitHub](https://github.com/dannyvankooten/mailchimp-for-wordpress)
 
 
 == Installation ==
@@ -102,7 +103,7 @@ if( function_exists( 'mc4wp_form' ) ) {
 
 Need help? Please take a look at the [frequently asked questions](https://wordpress.org/plugins/mailchimp-for-wp/faq/) first. If you can't find your answer there, start a topic in the [MailChimp for WordPress plugin support forums](http://wordpress.org/support/plugin/mailchimp-for-wp).
 
-= Upgrade to Pro =
+= Upgrade to MailChimp for WordPress Pro =
 If you like the plugin, [get the Pro version of MailChimp for WordPress](https://mc4wp.com/#utm_source=wp-plugin-repo&utm_medium=link&utm_campaign=installation-instructions-link) for an even better plugin!
 
 == Frequently Asked Questions ==
@@ -255,6 +256,51 @@ It's easy to translate the plugin into your own language. Head over to the [tran
 8. **Pro only:** Create your own CSS styles with the form designer in the Pro version.
 
 == Changelog ==
+
+= 2.2 - December 9, 2014 =
+
+**Fixes**
+
+- "Select at least one list" notice appearing when unselecting any MailChimp list in Form settings
+- If an error occurs, textareas will no longer lose their value
+
+**Improvements**
+
+- Improved the way form submissions are handled
+- Minor code & documentation improvements
+- Updated Dutch, French, Portugese and Spanish translations
+
+**Additions**
+
+- Added sign-up checkbox integration for [WooCommerce](https://wordpress.org/plugins/woocommerce/) checkout.
+- Added sign-up checkbox integration for [Easy Digital Downloads](https://wordpress.org/plugins/easy-digital-downloads/) checkout.
+- The entered email will now be appended to the URL when redirecting to another page
+
+= 2.1.7 - December 1, 2014 =
+
+**Fixes**
+
+- Fixes onclick event in older versions of IE, props [Simon Schick](https://github.com/SimonSimCity)
+
+**Improvements**
+
+- Updated Dutch, French, Hungarian, Italian, Norwegian, Swedish and Taiwanese translations.
+- Some textual improvements.
+
+**Additions**
+
+- {email} shortcode to use in form mark-up.
+
+= 2.1.6 - November 18, 2014 =
+
+**Fixes**
+
+- Notice in `class-widget.php` when widget options are never saved.
+
+**Improvements**
+
+- Added some missing gettext calls so strings can be translated.
+- Updated translations
 
 = 2.1.5 - October 13, 2014 =
 
@@ -602,5 +648,5 @@ It's easy to translate the plugin into your own language. Head over to the [tran
 
 == Upgrade Notice ==
 
-= 2.1.4 =
-Updated & improved translations. Edge case bug fixes. Minor improvements and added filter hooks.
+= 2.2 =
+Contains many code improvements, updated translations and checkbox integration with WooCommerce & EDD checkout.
